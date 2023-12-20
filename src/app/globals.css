@@ -2,26 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+/*=====================CSS VARIABLES =======================*/
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /*================= Colors ============*/
+  --primary-color: #ff914d;
+  --secondary-color: #0d344f;
+  --white-color: #ffffff;
+  --black-color: #222222;
+  --text-color: #585858;
+  --border-color-primary: #ff914d17;
+  --border-color-secondary: #0d344f17;
+  --outline-color-primary: #ff914d90;
+}
+.text-shadin-primary {
+  color: var(--primary-color);
+}
+.text-shadin-secondary {
+  color: var(--secondary-color);
+}
+.text-shadin-white {
+  color: var(--white-color);
+}
+.text-shadin-black {
+  color: var(--black-color);
+}
+.text-shadin-paragraph {
+  color: var(--text-color);
+}
+.bg-shadin-primary {
+  background-color: var(--primary-color);
+}
+.bg-shadin-secondary {
+  background-color: var(--secondary-color);
+}
+.bg-shadin-white {
+  background-color: var(--white-color);
+}
+.bg-shadin-black {
+  background-color: var(--black-color);
+}
+.border-shadin-primary {
+  border-color: var(--border-color-primary);
+}
+.border-shadin-secondary {
+  border-color: var(--border-color-secondary);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/*==== container ====*/
+.shadin-container {
+  width: 100%;
+  max-width: 1280px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
 }
