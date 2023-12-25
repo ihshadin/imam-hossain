@@ -1,9 +1,12 @@
-import React from "react";
+import TopBar from "./TopBar";
+import "./NavBar.css";
+import MenuBar from "./MenuBar";
 
 const NavBar = () => {
   return (
     <header>
-      <div></div>
+      {/* <TopBar /> */}
+      <MenuBar />
     </header>
   );
 };

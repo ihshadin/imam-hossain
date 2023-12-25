@@ -2,57 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-/*=====================CSS VARIABLES =======================*/
-:root {
-  /*================= Colors ============*/
-  --primary-color: #ff914d;
-  --secondary-color: #0d344f;
-  --white-color: #ffffff;
-  --black-color: #222222;
-  --text-color: #585858;
-  --border-color-primary: #ff914d17;
-  --border-color-secondary: #0d344f17;
-  --outline-color-primary: #ff914d90;
-}
-.text-shadin-primary {
-  color: var(--primary-color);
-}
-.text-shadin-secondary {
-  color: var(--secondary-color);
-}
-.text-shadin-white {
-  color: var(--white-color);
-}
-.text-shadin-black {
-  color: var(--black-color);
-}
-.text-shadin-paragraph {
-  color: var(--text-color);
-}
-.bg-shadin-primary {
-  background-color: var(--primary-color);
-}
-.bg-shadin-secondary {
-  background-color: var(--secondary-color);
-}
-.bg-shadin-white {
-  background-color: var(--white-color);
-}
-.bg-shadin-black {
-  background-color: var(--black-color);
-}
-.border-shadin-primary {
-  border-color: var(--border-color-primary);
-}
-.border-shadin-secondary {
-  border-color: var(--border-color-secondary);
+/*==== theme colors ====*/
+@layer base {
+  :root {
+    --color-bkg: 210deg 40% 98%;
+    --color-content: 217deg 32.6% 17.5%;
+    --color-accent1: 288deg 95.8% 90.6%;
+    --color-accent2: 168deg 83.8% 78.2%;
+  }
+  @media (color-scheme: dark) {
+    :root {
+      --color-bkg: 217deg 32.6% 17.5%;
+      --color-content: 210deg 40% 98%;
+      --color-accent1: 288deg 95.8% 60.6%;
+      --color-accent2: 168deg 83.8% 48.2%;
+    }
+  }
+  :root[class="dark"] {
+    --color-bkg: 217deg 32.6% 17.5%;
+    --color-content: 210deg 40% 98%;
+    --color-accent1: 288deg 95.8% 60.6%;
+    --color-accent2: 168deg 83.8% 48.2%;
+  }
 }
 
-/*==== container ====*/
+/*==== custom common class ====*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .shadin-container {
   width: 100%;
   max-width: 1280px;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
+}
+.dark {
+  @apply bg-secondary;
 }

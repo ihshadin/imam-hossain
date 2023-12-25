@@ -1,9 +1,14 @@
 "use client";
 
 import { NextUIProvider } from "@nextui-org/react";
+import { ThemeProvider } from "next-themes";
 
 const Providers = ({ children }) => {
-  return <NextUIProvider>{children}</NextUIProvider>;
+  return (
+    <ThemeProvider attribute="class" defaultTheme="dark">
+      <NextUIProvider>{children}</NextUIProvider>
+    </ThemeProvider>
+  );
 };
 
 export default Providers;
