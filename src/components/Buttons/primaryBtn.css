@@ -2,15 +2,7 @@
   --btnDeg: 45deg;
 }
 
-/* a.primaryBtn i {
-  position: absolute;
-  inset: -2px;
-  display: flex;
-  border-radius: 5px;
-} */
-
-a.primaryBtn i,
-a.primaryBtn i:nth-child(2) {
+.dark a.primaryBtn i {
   background: linear-gradient(
     var(--btnDeg),
     #00ccff,
@@ -19,6 +11,12 @@ a.primaryBtn i:nth-child(2) {
     #d400d4
   );
 }
-/* .primaryBtn i:nth-child(2) {
-  filter: blur(10px);
-} */
+.light a.primaryBtn i {
+  background: linear-gradient(
+    var(--btnDeg),
+    #00fdfd,
+    #769f4f,
+    #769f4f,
+    #9900ff
+  );
+}
