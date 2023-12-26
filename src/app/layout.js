@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <NavBar />
           <main>{children}</main>
-          <TestMode />
+          {/* <TestMode /> */}
           <Footer />
         </Providers>
       </body>

@@ -40,5 +40,5 @@
   margin: 0 auto;
 }
 .dark {
-  @apply bg-secondary;
+  @apply bg-secondary bg-[url("../assets/images/Noise-Texture.png")];
 }
