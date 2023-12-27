@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <footer className="border-t border-slate-200 dark:border-slate-700">
       <div className="shadin-container">
-        <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-2 py-6">
-          <div class="text-1 dark:text-2 text-sm text-center">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-2 py-6">
+          <div className="text-1 dark:text-2 text-sm text-center">
             Copyright @ 2024 by{" "}
             <Link
               href={"/"}
@@ -24,7 +24,7 @@ const Footer = () => {
             {". "}
             All rights reserved.
           </div>
-          <div class="flex gap-6 items-center text-lg text-1 dark:text-2">
+          <div className="flex gap-6 items-center text-lg text-1 dark:text-2">
             <a href="#!">
               <FaLinkedinIn />
             </a>
@@ -43,10 +43,10 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* <div class="p-6 text-center">
+        {/* <div className="p-6 text-center">
           <span>© 2023 Copyright:</span>
           <a
-            class="font-semibold text-neutral-600 dark:text-neutral-400"
+            className="font-semibold text-neutral-600 dark:text-neutral-400"
             href="https://tw-elements.com/"
           >
             TW elements
