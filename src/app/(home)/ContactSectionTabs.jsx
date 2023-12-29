@@ -16,7 +16,7 @@ const ContactSectionTabs = () => {
         base: "base-class-shadin mb-3",
         tab: "h-auto py-1 border border-primary bg-secondary",
         tabList: "p-0",
-        tabContent: "text-xl font-semibold capitalize block text-white",
+        tabContent: "text-xl font-medium capitalize block text-white",
         panel: "rounded-none px-0",
       }}
     >
@@ -34,7 +34,7 @@ const ContactSectionTabs = () => {
             <div className="flex gap-3 lg:gap-5 items-center justify-between">
               <div className="flex flex-col items-center w-1/2 bg-secondary p-3 md:p-5 border border-primary rounded-2xl">
                 <h3 className="text-3xl lg:text-4xl font-bold capitalize">
-                  3&#43;
+                  4&#43;
                 </h3>
                 <h4 className="text-lg lg:text-2xl text-center font-semibold whitespace-nowrap">
                   Years Experience
@@ -42,7 +42,7 @@ const ContactSectionTabs = () => {
               </div>
               <div className="flex flex-col items-center w-1/2 bg-secondary p-3 md:p-5 border border-primary rounded-2xl">
                 <h3 className="text-2xl lg:text-4xl font-bold capitalize">
-                  8&#43;
+                  24&#43;
                 </h3>
                 <h4 className="text-lg lg:text-2xl text-center font-semibold">
                   Happy Clients
@@ -51,7 +51,7 @@ const ContactSectionTabs = () => {
             </div>
             <div className="flex flex-col items-center w-full bg-secondary p-5 md:p-7 border border-primary rounded-2xl">
               <h3 className="text-2xl lg:text-4xl font-bold capitalize">
-                78&#43;
+                150&#43;
               </h3>
               <h4 className="text-lg lg:text-2xl text-center font-semibold">
                 Projects Completed
