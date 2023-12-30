@@ -58,12 +58,12 @@ const PortfolioSection = () => {
           {portItems.map((item) => (
             <div
               key={item.id}
-              className="bg-[#23303f] hover:bg-1 duration-200 transition-all rounded-lg shadow-md hover:shadow-lg shadow-white hover:shadow-white"
+              className="bg-[#23303f] hover:bg-1 duration-200 transition-all rounded-lg shadow-md hover:shadow-lg shadow-primary hover:shadow-primary"
             >
               <div>
                 <Image src={portfolioImg} />
               </div>
-              <div className="px-4 pb-4 pt-1">
+              <div className="px-4 pb-4 pt-2">
                 <div className="text-sm font-thin flex items-center gap-2">
                   <span>{item.typeOfWork}</span>
                   <span className="w-1 h-1 rounded-full bg-primary"></span>

@@ -16,7 +16,7 @@ const ContactSectionTabs = () => {
         base: "base-class-shadin mb-3",
         tab: "h-auto py-1 border border-primary bg-secondary",
         tabList: "p-0",
-        tabContent: "text-xl font-medium capitalize block text-white",
+        tabContent: "lg:text-lg font-medium capitalize block text-white",
         panel: "rounded-none px-0",
       }}
     >
