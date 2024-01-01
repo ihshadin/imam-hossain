@@ -166,9 +166,9 @@ const ContactForm = () => {
             }}
           />
         </div>
-        {/* <div> */}
-        <PrimaryBtn btnText="Get Quote" btnWidth={180} />
-        {/* </div> */}
+        <div className="self-end">
+          <PrimaryBtn btnText="Get Quote" />
+        </div>
       </div>
     </div>
   );

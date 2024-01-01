@@ -5,7 +5,7 @@
 .dark a.primaryBtn i {
   background: linear-gradient(
     var(--btnDeg),
-    #00ccff,
+    #206df7,
     #0e1538,
     #0e1538,
     #d400d4
@@ -18,5 +18,14 @@
     #769f4f,
     #769f4f,
     #9900ff
+  );
+}
+.dark a.secondaryBtn i {
+  background: linear-gradient(
+    var(--btnDeg),
+    #206df7,
+    #0e1538,
+    #0e1538,
+    #00e1ff
   );
 }

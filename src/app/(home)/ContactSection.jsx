@@ -7,10 +7,13 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 
 const ContactSection = () => {
   return (
-    <section className="py-12 lg:py-24">
+    <section className="py-8 lg:py-16">
       <div className="shadin-container">
         <div>
-          <SectionTitle title={"Get In Touch"} subTitle={"Contact With Me"} />
+          <SectionTitle
+            title={"Let's Collaborate"}
+            subTitle={"Contact With Me"}
+          />
         </div>
         <div className="flex flex-col md:flex-row gap-7 md:gap-2 items-center mt-8 lg:mt-14">
           <div className="flex flex-col gap-3 w-full md:w-[45%] self-start">

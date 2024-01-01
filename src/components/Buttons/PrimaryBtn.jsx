@@ -1,13 +1,15 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./primaryBtn.css";
 
-const PrimaryBtn = ({ btnText = "Button Text", btnPath, btnWidth = 150 }) => {
+const PrimaryBtn = ({ btnText, btnPath, btnWidth = 150, btnType }) => {
   const [btnDeg, setBtnDeg] = useState(45);
 
   const handleMouseMove = (e) => {
-    let btns = document.querySelectorAll(".primaryBtn");
+    let btns = document.querySelectorAll(
+      btnType ? `.${btnType}` : ".primaryBtn"
+    );
     for (let i = 0; i < btns.length; i++) {
       let btn = btns[i];
       if (
@@ -15,7 +17,7 @@ const PrimaryBtn = ({ btnText = "Button Text", btnPath, btnWidth = 150 }) => {
         btnText.split(" ").join("-").toLowerCase()
       ) {
         let rect = btn.getBoundingClientRect();
-        let degree = (e.clientY - e.clientX) * 3 - rect.left;
+        let degree = e.clientY - e.clientX - rect.left;
         setBtnDeg(degree);
       }
     }
@@ -24,9 +26,11 @@ const PrimaryBtn = ({ btnText = "Button Text", btnPath, btnWidth = 150 }) => {
   return (
     <Link
       href={btnPath || "#"}
-      style={{ "--btnDeg": `${btnDeg}deg` }}
+      style={{ "--btnDeg": `${btnDeg}deg`, width: `${btnWidth}px` }}
       onMouseMove={(e) => handleMouseMove(e)}
-      className={`primaryBtn relative w-[${btnWidth}px] min-w-[150px]  h-14 inline-block rounded-md`}
+      className={`${
+        btnType || "primaryBtn"
+      } relative min-w-[150px] h-14 inline-block rounded-md`}
     >
       <i className="absolute inset-[-2px] flex rounded-md"></i>
       <i className="absolute inset-[-2px] flex rounded-md blur-md"></i>

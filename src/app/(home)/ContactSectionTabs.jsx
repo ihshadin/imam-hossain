@@ -69,13 +69,13 @@ const ContactSectionTabs = () => {
           </div>
         }
       >
-        <Card className="bg-transparent rounded-none text-emerald-500 md:px-5 gap-4">
+        <Card className="bg-transparent rounded-none text-emerald-500 gap-4">
           <Progress
             radius="sm"
             classNames={{
               base: "!gap-1",
               track: "drop-shadow-md border border-default h-[6px]",
-              indicator: "bg-gradient-to-r from-red-600 to-emerald-400",
+              indicator: "bg-gradient-to-r from-emerald-200 to-emerald-400",
               label: "tracking-wider font-medium text-default-600 text-lg",
             }}
             label="WordPress"
@@ -86,7 +86,7 @@ const ContactSectionTabs = () => {
             classNames={{
               base: "!gap-1",
               track: "drop-shadow-md border border-default h-[6px]",
-              indicator: "bg-gradient-to-r from-red-600 to-emerald-400",
+              indicator: "bg-gradient-to-r from-emerald-200 to-emerald-400",
               label: "tracking-wider font-medium text-default-600 text-lg",
             }}
             label="Elementor"
@@ -97,7 +97,7 @@ const ContactSectionTabs = () => {
             classNames={{
               base: "!gap-1",
               track: "drop-shadow-md border border-default h-[6px]",
-              indicator: "bg-gradient-to-r from-red-600 to-emerald-400",
+              indicator: "bg-gradient-to-r from-emerald-200 to-emerald-400",
               label: "tracking-wider font-medium text-default-600 text-lg",
             }}
             label="Node JS"
@@ -108,7 +108,7 @@ const ContactSectionTabs = () => {
             classNames={{
               base: "!gap-1",
               track: "drop-shadow-md border border-default h-[6px]",
-              indicator: "bg-gradient-to-r from-red-600 to-emerald-400",
+              indicator: "bg-gradient-to-r from-emerald-200 to-emerald-400",
               label: "tracking-wider font-medium text-default-600 text-lg",
             }}
             label="MondoDB"
@@ -119,7 +119,7 @@ const ContactSectionTabs = () => {
             classNames={{
               base: "!gap-1",
               track: "drop-shadow-md border border-default h-[6px]",
-              indicator: "bg-gradient-to-r from-red-600 to-emerald-400",
+              indicator: "bg-gradient-to-r from-emerald-200 to-emerald-400",
               label: "tracking-wider font-medium text-default-600 text-lg",
             }}
             label="Next JS"
@@ -130,7 +130,7 @@ const ContactSectionTabs = () => {
             classNames={{
               base: "!gap-1",
               track: "drop-shadow-md border border-default h-[6px]",
-              indicator: "bg-gradient-to-r from-red-600 to-emerald-400",
+              indicator: "bg-gradient-to-r from-emerald-200 to-emerald-400",
               label: "tracking-wider font-medium text-default-600 text-lg",
             }}
             label="React JS"

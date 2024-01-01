@@ -44,7 +44,7 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <section className="py-12 lg:py-24">
+    <section className="py-8 lg:py-16">
       <div className="shadin-container">
         <div>
           <SectionTitle

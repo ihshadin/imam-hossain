@@ -53,7 +53,7 @@ const ServicesSection = () => {
   console.log(serviceImg.src);
 
   return (
-    <section className="py-12 lg:py-24">
+    <section className="py-8 lg:py-16">
       <div className="shadin-container">
         <div>
           <SectionTitle title={"My Services"} subTitle={"What I Do?"} />
@@ -61,13 +61,13 @@ const ServicesSection = () => {
         <div
           className={`flex flex-col-reverse md:flex-row items-center gap-8 md:gap-0 mt-8 lg:mt-14 bg-[url("")]`}
         >
-          <div className="w-full md:w-[70%] lg:w-[60%]">
+          <div className="w-full md:w-[60%] lg:w-[55%]">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-10">
-              We Provide
+              I Provide
               <br />
-              <span className="text-primary">Best IT Solutions</span>
+              <span className="text-primary">Best Web Solutions</span>
             </h2>
-            <div className="grid md:grid-cols-2 gap-x-3 gap-y-6 md:gap-y-10">
+            <div className="grid md:grid-cols-2 gap-x-1 md:gap-x-3 gap-y-6 md:gap-y-10">
               {serItems.map((item) => (
                 <div key={item.id} className="flex items-center gap-2">
                   <Image
@@ -87,7 +87,7 @@ const ServicesSection = () => {
               ))}
             </div>
           </div>
-          <div className="w-full md:w-[30%] lg:w-[40%]">
+          <div className="w-full md:w-[40%] lg:w-[45%]">
             <Image src={serviceImg} alt="Services Image" />
           </div>
         </div>

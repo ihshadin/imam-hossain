@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bannerImg from "@/assets/images/banner-img.png";
+import bannerImg from "@/assets/images/banner-img3.png";
 import PrimaryBtn from "@/components/Buttons/PrimaryBtn";
 import HeroSectionTitles from "@/components/Typing/HeroSectionTitles";
 
@@ -30,6 +30,7 @@ const HeroSection = () => {
               btnPath={"/about-me"}
               btnText={"About Me"}
               btnWidth={150}
+              btnType={"secondaryBtn"}
             />
           </div>
         </div>

@@ -18,7 +18,7 @@ module.exports = {
         },
         bkg: "hsl(var(--color-bkg) / <alpha-value>)",
         content: "hsl(var(--color-content) / <alpha-value>)",
-        primary: "#769f4f",
+        primary: "#206df7",
         secondary: "#0f172a",
         1: "#334155",
         2: "#94a3b8",

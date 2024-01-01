@@ -1,13 +1,13 @@
 import SectionTitle from "@/components/Titles/SectionTitle";
 import React from "react";
-import aboutImg from "@/assets/images/soft.png";
+import aboutImg from "@/assets/images/shadin2.jpg";
 import Image from "next/image";
 import Experties from "@/components/Typing/Experties";
 import ContactSectionTabs from "./ContactSectionTabs";
 
 const AboutSection = () => {
   return (
-    <section className="py-12 lg:py-24">
+    <section className="py-8 lg:py-16">
       <div className="shadin-container">
         <div>
           <SectionTitle
@@ -16,11 +16,11 @@ const AboutSection = () => {
             btnText={"View More"}
           />
         </div>
-        <div className="flex flex-col md:flex-row items-center mt-8 lg:mt-14">
-          <div className="w-full md:w-[45%] self-start">
-            <Image className="w-full" src={aboutImg} />
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 mt-8 lg:mt-14">
+          <div className="w-full md:w-[45%] lg:w-[40%] self-start">
+            <Image className="w-full rounded-3xl" src={aboutImg} />
           </div>
-          <div className="w-full md:w-[55%]">
+          <div className="w-full md:w-[55%] lg:w-[60%]">
             <div>
               <h1 className="text-2xl lg:text-4xl font-bold capitalize">
                 Imam hossain Shadin
