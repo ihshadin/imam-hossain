@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import logo from "@/assets/siteInfo/logo.png";
 import logoDark from "@/assets/siteInfo/logo.png";
 import logoLight from "@/assets/siteInfo/logo-light.png";
 import { useTheme } from "next-themes";
@@ -10,7 +11,8 @@ const BrandArea = () => {
     <div className="flex gap-2 items-center leading-5">
       <Image
         width={32}
-        src={theme === "light" ? logoDark : logoLight}
+        // src={theme === "light" ? logoDark : logoLight}
+        src={logo}
         alt="Logo"
       />
       <h1 className="text-1 dark:text-white hidden xs:block font-bold text-base md:text-lg !leading-none">

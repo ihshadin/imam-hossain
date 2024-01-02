@@ -3,7 +3,6 @@ import "./globals.css";
 import Providers from "@/providers/Providers";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
-import TestMode from "./TestMode";
 
 const archivo = Archivo({ subsets: ["latin"] });
 
@@ -19,7 +18,6 @@ export default function RootLayout({ children }) {
         <Providers>
           <NavBar />
           <main>{children}</main>
-          {/* <TestMode /> */}
           <Footer />
         </Providers>
       </body>

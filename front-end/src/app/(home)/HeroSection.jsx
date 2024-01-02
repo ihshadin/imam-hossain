@@ -35,7 +35,11 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="w-full md:w-[55%] self-end">
-          <Image className="w-full" src={bannerImg} alt="Banner Image" />
+          <Image
+            className="w-full"
+            src={bannerImg}
+            alt="Imam Hossain Shadin's Banner Image"
+          />
         </div>
       </div>
     </section>

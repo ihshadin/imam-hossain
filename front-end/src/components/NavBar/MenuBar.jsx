@@ -24,7 +24,7 @@ const MenuBar = () => {
       <div className="">
         <Navbar
           classNames={{
-            base: "base-class-shadin",
+            base: "base-class-shadin bg-transparent backdrop-blur-none",
             wrapper: "wrapper-class-shadin shadin-container px-0 py-3 h-auto",
             content: "content-class-shadin",
             toggle: "toggle-class-shadin",

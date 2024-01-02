@@ -18,7 +18,11 @@ const AboutSection = () => {
         </div>
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 mt-8 lg:mt-14">
           <div className="w-full md:w-[45%] lg:w-[40%] self-start">
-            <Image className="w-full rounded-3xl" src={aboutImg} />
+            <Image
+              className="w-full rounded-3xl"
+              src={aboutImg}
+              alt="Imam Hossain Shadin"
+            />
           </div>
           <div className="w-full md:w-[55%] lg:w-[60%]">
             <div>

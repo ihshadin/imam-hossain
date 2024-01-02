@@ -22,7 +22,7 @@ const TestimonialSection = () => {
       rating: 4,
     },
     {
-      id: 1,
+      id: 2,
       fullName: "Imam Hossain",
       username: "imamhossain",
       clientSay:
@@ -31,7 +31,7 @@ const TestimonialSection = () => {
       rating: 4.5,
     },
     {
-      id: 1,
+      id: 3,
       fullName: "Imam Hossain",
       username: "imamhossain",
       clientSay:
@@ -40,7 +40,7 @@ const TestimonialSection = () => {
       rating: 5,
     },
     {
-      id: 1,
+      id: 4,
       fullName: "Imam Hossain",
       username: "imamhossain",
       clientSay:
@@ -81,7 +81,7 @@ const TestimonialSection = () => {
             className="mySwiper"
           >
             {feedbacks?.map((feedback) => (
-              <SwiperSlide key={feedback._id}>
+              <SwiperSlide key={feedback.id}>
                 <div className="flexcode-banner-bg p-5 md:p-5 mb-9 rounded-2xl text-white border border-1 hover:border-primary transition-all duration-300 cursor-pointer">
                   {/* <h2 className="text-xl font-semibold mb-5 line-clamp-1">
                   {feedback.thumbExpression}

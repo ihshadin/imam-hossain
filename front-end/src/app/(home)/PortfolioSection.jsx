@@ -61,7 +61,7 @@ const PortfolioSection = () => {
               className="bg-[#23303f] hover:bg-1 duration-200 transition-all rounded-lg shadow-md hover:shadow-lg shadow-primary hover:shadow-primary"
             >
               <div>
-                <Image src={portfolioImg} />
+                <Image src={portfolioImg} alt="Latest Works photo" />
               </div>
               <div className="px-4 pb-4 pt-2">
                 <div className="text-sm font-thin flex items-center gap-2">

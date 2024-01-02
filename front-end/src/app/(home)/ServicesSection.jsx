@@ -59,7 +59,7 @@ const ServicesSection = () => {
           <SectionTitle title={"My Services"} subTitle={"What I Do?"} />
         </div>
         <div
-          className={`flex flex-col-reverse md:flex-row items-center gap-8 md:gap-0 mt-8 lg:mt-14 bg-[url("")]`}
+          className={`flex flex-col-reverse md:flex-row items-center gap-8 md:gap-0 mt-8 lg:mt-14`}
         >
           <div className="w-full md:w-[60%] lg:w-[55%]">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-10">
