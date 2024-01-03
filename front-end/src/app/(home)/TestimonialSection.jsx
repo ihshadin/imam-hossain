@@ -82,7 +82,7 @@ const TestimonialSection = () => {
           >
             {feedbacks?.map((feedback) => (
               <SwiperSlide key={feedback.id}>
-                <div className="flexcode-banner-bg p-5 md:p-5 mb-9 rounded-2xl text-white border border-1 hover:border-primary transition-all duration-300 cursor-pointer">
+                <div className="p-5 md:p-5 mb-9 rounded-2xl text-white border border-1 hover:border-primary transition-all duration-300 cursor-pointer">
                   {/* <h2 className="text-xl font-semibold mb-5 line-clamp-1">
                   {feedback.thumbExpression}
                 </h2> */}

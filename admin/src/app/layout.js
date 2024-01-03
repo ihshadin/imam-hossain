@@ -1,6 +1,7 @@
 import { Archivo } from "next/font/google";
 import "./globals.css";
 import Providers from "@/providers/Providers";
+import DashboardMenu from "@/components/Dashboard/DashboardMenu";
 
 const archivo = Archivo({ subsets: ["latin"] });
 
@@ -14,7 +15,12 @@ const MainLayout = ({ children }) => {
     <html lang="en">
       <body className={archivo.className}>
         <Providers>
-          <main>{children}</main>
+          <div className="flex">
+            <div className="flex flex-col md:flex-row gap-5 w-full overflow-hidden">
+              <DashboardMenu />
+              <div className="w-full px-3 py-16">{children}</div>
+            </div>
+          </div>
         </Providers>
       </body>
     </html>
